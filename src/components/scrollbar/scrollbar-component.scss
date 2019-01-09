@@ -1,0 +1,157 @@
+.scrollbar-border {
+    position: fixed;
+    left: 92%;
+    width: 6%;
+    height: 88%;
+    border: solid 1px #c6ccdc;
+    border-radius: 0.5em;
+    margin-top: 2%;
+}
+
+.scrollbar {
+    font-family: 'Roboto';
+    position: fixed;
+    width: 8%;
+    word-break: break-all;
+    left: 94%;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 86%;
+    color: #6a7f95;
+    margin-top: 4%;
+    span {
+        display: block;
+        height: 3.7%;
+    }
+    .active {
+        color: #840023;
+    }
+    .star {
+        // margin-left: -200%;
+    }
+}
+
+.selected-letter {
+    padding: 1% 1% 0 1%;
+    opacity: 0;
+    line-height: 1.3;
+    background: #840023;
+    position: fixed;
+    color: #fff;
+    font-size: 25px;
+    left: 75%;
+    z-index: 100;
+    border-radius: 45px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.scrollbar-thumb {
+    opacity: 0;
+    position: fixed;
+    background: #840023;
+    left: 92.8%;
+    width: 4.5%;
+    height: 3.5em;
+    border-radius: 1em;
+}
+
+.animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOutScrollThumb {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutScrollThumb {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeInScrollThumb {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes fadeInScrollThumb {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+.fade-out {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+.fade-in {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.fade-in-scrollthumb {
+    -webkit-animation-name: fadeInScrollThumb;
+    animation-name: fadeInScrollThumb;
+}
+
+.fade-out-scrollthumb {
+    -webkit-animation-name: fadeOutScrollThumb;
+    animation-name: fadeOutScrollThumb;
+}
